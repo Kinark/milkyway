@@ -1,0 +1,58 @@
+.carousel-holder {
+   width: 100%;
+   overflow: hidden;
+}
+
+.review {
+   width: 430px;
+   height: 145px;
+   display: inline-block;
+   position: relative;
+   padding-left: 65px;
+   margin-left: calc(55px + 22px);
+   margin-right: 22px;
+   transition: .25s opacity;
+   &:not(.is-selected) {
+      opacity: 0.5;
+   }
+   .avatar {
+      height: 111px;
+      width: 111px;
+      border-radius: 50%;
+      border: solid 7px #fff;
+      overflow: hidden;
+      box-shadow: 8px 25px 58px 0 rgba(35, 39, 42, 0.3);
+      position: absolute;
+      left: -55px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      img {
+         width: 100%;
+      }
+   }
+   .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-top: -2px;
+      .name {
+         color: #424242;
+         font-weight: 500;
+         font-size: 17px;
+      }
+      .position {
+         color: #9D9D9D;
+         font-weight: 300;
+         font-size: 15px;
+      }
+      .message {
+         color: #757575;
+         margin-top: 3px;
+         font-size: 14px;
+         max-height: 52px;
+         text-overflow: ellipsis;
+      }
+   }
+}

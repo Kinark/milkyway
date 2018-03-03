@@ -1,0 +1,20 @@
+.navbar {
+   height: 128px;
+   .container {
+      height: 100%;
+   }
+   .portal, .milkyway {
+      display: inline-flex;
+      height: 100%;
+      align-items: center;
+      vertical-align: middle;
+   }
+   .portal {
+      margin-right: 20px;
+      justify-content: center;
+      @media (max-width: 719px) {margin: auto !important;display: flex;}
+   }
+   .milkyway {
+      @media (max-width: 719px) {display: none;}
+   }
+}

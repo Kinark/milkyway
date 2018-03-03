@@ -1,1 +1,1 @@
-A dead-simple react/sass boilerplate.
+A simple admin panel made in react.

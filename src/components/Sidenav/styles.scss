@@ -1,0 +1,53 @@
+.sidenav {
+   padding-left: 0;
+   list-style-type: none;
+   margin: 0;
+   color: #fff;
+
+   overflow-x: auto;
+   white-space: nowrap;
+   @media (min-width: 720px) {margin-right: 10px;}
+   @media (max-width: 719px) {
+      // margin-right: 0;
+   }
+   .material-icons {
+      font-size: 32px;
+   }
+   li {
+      @media (max-width: 719px) {display: inline-block;}
+      a {
+         position: relative;
+         display: block;
+         padding: 15px 30px;
+         .material-icons {
+            position: relative;
+            top: 0;
+            opacity: 0.5;
+            transition: .25s all;
+         }
+         &.active .material-icons, &:hover .material-icons {
+            top: -1px;
+            top: -9px;
+            opacity: 1;
+         }
+         &::after {
+            font-size: 14px;
+            position: absolute;
+            content: attr(data-name);
+            bottom: 6px;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            pointer-events: none;
+            text-align: center;
+            opacity: 0;
+            transition: .25s all;
+         }
+         &:hover::after, &.active::after {
+            bottom: 6px;
+            opacity: 1;
+         }
+      }
+   }
+}
